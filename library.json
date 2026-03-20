@@ -1114,5 +1114,236 @@
     "query": "if (windows of operating system) then (exists service \"BesClient\" whose (state of it = \"Running\") AND exists file \"mshtml.dll\" of system folder AND exists key \"HKLM\\SOFTWARE\\Wow6432Node\\BigFix\\EnterpriseClient\" of registry AND exists adapters whose (up of it = true) of network) else false",
     "description": "Full endpoint health validation checking OS, Files, Registry, Services, and Networking.",
     "isFavorite": false
+  },
+  {
+    "id": "adv-intro-process",
+    "category": "ADVANCED",
+    "title": "Introspect: Process Properties",
+    "type": "client-relevance",
+    "query": "properties of type \"process\"",
+    "description": "Returns a list of all available properties you can query for a process object.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-intro-dmi",
+    "category": "ADVANCED",
+    "title": "Introspect: DMI Properties",
+    "type": "client-relevance",
+    "query": "properties of type \"dmi\"",
+    "description": "Returns a list of all available properties you can query for the DMI (SMBIOS) object.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-intro-hw",
+    "category": "ADVANCED",
+    "title": "Introspect: Hardware Properties",
+    "type": "client-relevance",
+    "query": "properties of type \"hardware\"",
+    "description": "Returns a list of all available properties you can query for the hardware object.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-intro-fw",
+    "category": "ADVANCED",
+    "title": "Introspect: Firewall Properties",
+    "type": "client-relevance",
+    "query": "properties of type \"firewall\"",
+    "description": "Returns a list of all available properties you can query for the firewall object.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-pid",
+    "category": "ADVANCED",
+    "title": "Process PIDs",
+    "type": "client-relevance",
+    "query": "(name of it, pid of it, ppid of it) of processes",
+    "description": "Returns the process name, process ID, and parent process ID for all running processes.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-mem",
+    "category": "ADVANCED",
+    "title": "Process Memory Usage",
+    "type": "client-relevance",
+    "query": "(name of it, working set size of it, page file usage of it) of processes",
+    "description": "Returns the name, working set size (RAM), and page file usage for all processes.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-io",
+    "category": "ADVANCED",
+    "title": "Process I/O Stats",
+    "type": "client-relevance",
+    "query": "(name of it, io read count of it, io write count of it) of processes",
+    "description": "Returns the I/O read and write operation counts for all running processes.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-time",
+    "category": "ADVANCED",
+    "title": "Process Creation & CPU Time",
+    "type": "client-relevance",
+    "query": "(name of it, creation time of it, kernel time of it, user time of it) of processes",
+    "description": "Returns when the process was created and how much kernel/user CPU time it has consumed.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-user",
+    "category": "ADVANCED",
+    "title": "Process Users and Sessions",
+    "type": "client-relevance",
+    "query": "(name of it, session id of it, user of it) of processes",
+    "description": "Returns the name, terminal session ID, and the SID of the user running the process.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-proc-sec",
+    "category": "ADVANCED",
+    "title": "Process Security Features",
+    "type": "client-relevance",
+    "query": "(name of it, dep enabled of it, nx bit of it, wow64 of it) of processes",
+    "description": "Returns process security info like DEP, NX bit status, and if it's a 32-bit process on a 64-bit OS (WOW64).",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-dmi-sysinfo",
+    "category": "ADVANCED",
+    "title": "DMI System & BIOS Info",
+    "type": "client-relevance",
+    "query": "(system_informations of it, bios_informations of it) of dmi",
+    "description": "Pulls core system and BIOS identifying information from DMI.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-dmi-board",
+    "category": "ADVANCED",
+    "title": "DMI Motherboard & Processor",
+    "type": "client-relevance",
+    "query": "(base_board_informations of it, processor_informations of it) of dmi",
+    "description": "Pulls motherboard (base board) and CPU information strings from DMI.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-dmi-mem",
+    "category": "ADVANCED",
+    "title": "DMI Physical Memory",
+    "type": "client-relevance",
+    "query": "(physical_memory_arrays of it, memory_devices of it) of dmi",
+    "description": "Pulls physical RAM array and individual memory stick (device) information from DMI.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-dmi-batt",
+    "category": "ADVANCED",
+    "title": "DMI Battery & Power",
+    "type": "client-relevance",
+    "query": "(portable_batterys of it, system_power_supplys of it) of dmi",
+    "description": "Pulls portable battery and power supply details from DMI.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-dmi-sensors",
+    "category": "ADVANCED",
+    "title": "DMI Hardware Sensors",
+    "type": "client-relevance",
+    "query": "(cooling_devices of it, temperature_probes of it, voltage_probes of it) of dmi",
+    "description": "Pulls hardware sensor data like fans, temperature probes, and voltage probes from DMI.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-env-all",
+    "category": "ADVANCED",
+    "title": "All Environment Variables",
+    "type": "client-relevance",
+    "query": "variables of environment",
+    "description": "Lists all system and user environment variables.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-env-x64",
+    "category": "ADVANCED",
+    "title": "x64 Environment Variables",
+    "type": "client-relevance",
+    "query": "x64 variables of environment",
+    "description": "Lists all 64-bit environment variables specifically.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-bios-ver",
+    "category": "ADVANCED",
+    "title": "BIOS Date and Version",
+    "type": "client-relevance",
+    "query": "(date of it, version of it) of bios",
+    "description": "Returns the release date and version of the system BIOS.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-hw-details",
+    "category": "ADVANCED",
+    "title": "Hardware Attributes",
+    "type": "client-relevance",
+    "query": "(serial of it, virtual of it, proxied of it, uuid of it) of hardware",
+    "description": "Returns the hardware serial number, whether it is a VM, proxy status, and UUID.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-date-parts",
+    "category": "ADVANCED",
+    "title": "Current Date Breakdown",
+    "type": "client-relevance",
+    "query": "(day_of_month of it, month of it, year of it, day_of_week of it, day_of_year of it) of current date",
+    "description": "Breaks the current date into specific parts (day, month, year, day of week, day of year).",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-time-zones",
+    "category": "ADVANCED",
+    "title": "Local Time Zone Execution",
+    "type": "client-relevance",
+    "query": "time (local time zone) of current time",
+    "description": "Returns the exact current time formatted with the endpoint's local time zone.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-fw-profiles",
+    "category": "ADVANCED",
+    "title": "Firewall Profiles",
+    "type": "client-relevance",
+    "query": "(current profile type of it, profile types of it) of firewall",
+    "description": "Returns the currently active firewall profile type and a list of all available profile types.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
+  },
+  {
+    "id": "adv-fw-rules",
+    "category": "ADVANCED",
+    "title": "Firewall Policies and Rules",
+    "type": "client-relevance",
+    "query": "(local policy of it, rules of it) of firewall",
+    "description": "Returns the local firewall policy and lists all individual firewall rules.",
+    "isFavorite": false,
+    "updated_at": "Mar 21, 2026 - 12:45 PM"
   }
+  
 ]
