@@ -1117,7 +1117,7 @@
   },
   {
     "id": "adv-intro-process",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Introspect: Process Properties",
     "type": "client-relevance",
     "query": "properties of type \"process\"",
@@ -1127,7 +1127,7 @@
   },
   {
     "id": "adv-intro-dmi",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Introspect: DMI Properties",
     "type": "client-relevance",
     "query": "properties of type \"dmi\"",
@@ -1137,7 +1137,7 @@
   },
   {
     "id": "adv-intro-hw",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Introspect: Hardware Properties",
     "type": "client-relevance",
     "query": "properties of type \"hardware\"",
@@ -1147,7 +1147,7 @@
   },
   {
     "id": "adv-intro-fw",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Introspect: Firewall Properties",
     "type": "client-relevance",
     "query": "properties of type \"firewall\"",
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "adv-intro-env",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Introspect: Environment Properties",
     "type": "client-relevance",
     "query": "properties of type \"environment\"",
@@ -1167,7 +1167,7 @@
   },
   {
     "id": "adv-proc-names",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Names of Processes",
     "type": "client-relevance",
     "query": "names of processes",
@@ -1177,7 +1177,7 @@
   },
   {
     "id": "adv-proc-pids",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "PIDs of Processes",
     "type": "client-relevance",
     "query": "pids of processes",
@@ -1187,7 +1187,7 @@
   },
   {
     "id": "adv-env-vars",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Environment Variables",
     "type": "client-relevance",
     "query": "(name of it & \"=\" & value of it) of variables of environment",
@@ -1197,7 +1197,7 @@
   },
   {
     "id": "adv-bios-version",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "BIOS Version",
     "type": "client-relevance",
     "query": "version of bios",
@@ -1207,7 +1207,7 @@
   },
   {
     "id": "adv-hw-serial",
-    "category": "ADVANCED",
+    "category": "Advanced",
     "title": "Hardware Serial",
     "type": "client-relevance",
     "query": "serial of hardware",
@@ -1215,4 +1215,5 @@
     "isFavorite": false,
     "updated_at": "Mar 21, 2026 - 12:50 PM"
   }
+]
 ]
