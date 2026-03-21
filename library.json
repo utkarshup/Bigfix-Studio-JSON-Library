@@ -1340,7 +1340,7 @@
     "category": "Actions",
     "title": "All Running/Open Actions",
     "type": "session-relevance",
-    "query": "(id of it, name of it, issuer of it, time issued of it) of bes actions whose (state of it = \"Open\")",
+    "query": "(ids of it, names of it) of bes actions whose (state of it = \"Open\")",
     "description": "Displays all deployment actions currently active in the environment.",
     "isFavorite": false,
     "updated_at": "Mar 21, 2026 - 1:00 PM"
@@ -1350,7 +1350,7 @@
     "category": "Actions",
     "title": "Action Results (Summary)",
     "type": "session-relevance",
-    "query": "(name of computer of it, detailed status of it, exit code of it) of results of bes action whose (id of it = 12345)",
+    "query": "(names of computers of it, detailed statuses of it, exit codes of it) of results of bes actions whose (id of it = 12345)",
     "description": "REPLACE '12345' with an Action ID to see execution results across all targeted endpoints.",
     "isFavorite": false,
     "updated_at": "Mar 21, 2026 - 1:00 PM"
@@ -1360,7 +1360,7 @@
     "category": "Actions",
     "title": "Failed Actions",
     "type": "session-relevance",
-    "query": "(id of action of it, name of computer of it, detailed status of it) of results whose (detailed status of it as lowercase contains \"failed\") of bes actions",
+    "query": "(ids of actions of it, names of computers of it, detailed statuses of it) of results whose (detailed status of it as lowercase contains \"failed\") of bes actions",
     "description": "Finds specific computers where an action deployment failed.",
     "isFavorite": false,
     "updated_at": "Mar 21, 2026 - 1:00 PM"
